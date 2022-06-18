@@ -1,20 +1,20 @@
 {
   "name": "discotify",
   "version": "1.0.0",
-  "description": "A Spotify-Discord connector to right-click + \"Play on Discord\"",
-  "main": "index.js",
+  "description": "Play a track or playlist on a Discord bot straight from Spotify!",
   "scripts": {
-    "build": "esbuild bd/src/discotify.plugin.ts --bundle --platform=node --outfile=bd/build/discotify.plugin.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "./esbuild/build.ts",
+    "watch": "./esbuild/watch.js"
   },
   "author": "tcorzo",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
-    "@types/bandagedbd__bdapi": "^0.3.4",
-    "esbuild": "^0.14.42",
     "http-server": "^14.1.1"
   },
   "devDependencies": {
-    "@types/node": "^17.0.40"
+    "@types/node": "^17.0.40",
+    "esbuild": "^0.14.42",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.4"
   }
 }
